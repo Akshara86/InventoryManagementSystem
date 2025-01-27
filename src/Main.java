@@ -9,6 +9,7 @@ class Item {
         this.name = name;
         this.category = category;
         this.quantity = quantity;
+        System.out.println("jhvubkj");
     }
 
     @Override
@@ -28,7 +29,7 @@ class InventorySystem {
         }
         Item newItem = new Item(id, name, category, quantity);
         inventory.put(id, newItem);
-
+        System.out.println("jhbhgvhgcgfghc");
         categoryMap.putIfAbsent(category, new PriorityQueue<>((a, b) -> b.quantity - a.quantity));
         categoryMap.get(category).add(newItem);
 
